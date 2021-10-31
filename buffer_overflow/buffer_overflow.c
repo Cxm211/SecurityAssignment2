@@ -31,9 +31,8 @@ void bof(FILE * fd1, FILE * fd2)
 		idx1 = (idx % 2) ? BUFSIZE - 1 : idx / 2;
 		idx2 = (idx % 2) ? idx / 2 : BUFSIZE - 1;
 		buf[idx] = buf1[idx1] + buf2[idx2];
-		printf("%s", buf[idx]);
 	}
-
+	printf(buf);
 }
 
 int main(void)
